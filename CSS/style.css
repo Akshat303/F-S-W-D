@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(223, 185, 185);
+}
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+#first{
+    background-color: brown;
+
+}
+
+#second{
+    background-color: darkgoldenrod;
+    margin: 10px;
+}
+
+.red , h3{
+    background-color: rgb(130, 204, 56);
+    color: rgb(139, 28, 0);
+    padding: 5px;
+}
+#selector{
+    color: darkred;
+    background-color: darkseagreen;
+}
+/* p{
+    background-color: rgb(9, 66, 9);
+
+}
+h1{
+    background-color: rgb(148, 49, 161);
+} */
+
+.blue{
+    background-color: rgb(37, 177, 212);
+   color: rgb(179, 27, 179); */
+    border: 2px solid black;
+}

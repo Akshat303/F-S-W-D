@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First project</title>
+</head>
+<style>
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        background: rgb(245, 212, 212);
+        background: url('img/1.jpg');
+        background-size:100% 1000px;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .left {
+        display: inline-block;
+        border: 2px solid rgb(0, 0, 0);
+        position: absolute;
+        left: 60px;
+        top: 35px;
+    }
+
+    .left img {
+        position: relative;
+        left: 10px;
+        width: 90px;
+        height: 90px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 19px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    .left div:hover {
+        color: aqua;
+    }
+
+    .mid {
+        position: relative;
+        right: 5%;
+        display: block;
+        width: 50%;
+        top: 29px;
+        margin: 20px auto;
+        /* border: 2px solid rgb(27, 0, 148); */
+    }
+
+    .right {
+        position: absolute;
+        right: 20px;
+        top: 10%;
+        display: inline-block;
+        /* border: 2px solid rgb(255, 2, 5); */
+    }
+
+    .navbar {
+        display: inline-block;
+        position: relative;
+        margin-left: 51px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 11px 10px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(255, 0, 0);
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: aqua;
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        border: 3px solid rgb(2, 226, 51);
+        margin: 97px auto;
+        padding: 20px;
+        width: 45%;
+        border-radius: 16px;
+    }
+
+    .form-group input,
+    label,
+    select,
+    textarea {
+        font-size: 22px;
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        color: rgb(248, 0, 0);
+        display: block;
+        width: 255px;
+        padding: 1px 50px;
+        /* border: 3px solid rgb(253, 1, 1); */
+        margin: 11px auto;
+
+    }
+
+    .form-group input,
+    textarea,
+    select {
+        border: 4px solid rgb(0, 0, 0);
+    }
+
+    .container h1 {
+        text-align: center;
+        /* font-size: 25px; */
+        color: rgb(0, 143, 24);
+        
+
+    }
+
+    .container button {
+        display: block;
+        width: 80%;
+        margin: 35px auto;
+        font-size: 25px;
+        background: rgb(0, 238, 255);
+        color: black;
+        font-weight: bold;
+        border: 5px solid rgb(0, 255, 0);
+        border-radius: 25px;
+    }
+
+
+    #but:hover {
+        color: rgba(255, 0, 0, 0.925);
+        background-color: rgb(236, 253, 0);
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/6.jpg" alt="">
+            <div>Mr_cscoder</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Coding Form</a></li>
+                <li> <a href="#">Contacts Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Dought Question</button>
+            <button class="btn">Suggestion</button>
+        </div>
+
+
+    </header>
+
+    <div class="container">
+        <h1>
+            Join the best free Programing <br> classes &#128512;
+        </h1>
+        <hr>
+        <form action="#">
+            <div class="form-group"><label for="Name">Name :-</label>
+                <input type="text" name="name" id="Name" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group"><label for="mail">Email :- </label>
+                <input type="email" name="mail" id="mail" placeholder="Enter your Email ID">
+            </div>
+
+            <div class="form-group"><label for="skil">What you know:-</label>
+                <div><textarea name="skils" id="skil" cols="37" rows="1"></textarea></div>
+            </div>
+
+            <div class="form-group"><label for="prog">What you want to Learn :-</label>
+                <select name="learninfo" id="prog">
+                    <option value="1" selected>Python</option>
+                    <option value="2">Java Script</option>
+                    <option value="3">C++</option>
+                    <option value="4">PHP</option>
+                    <option value="5">React Js</option>
+                </select>
+            </div>
+
+            <button class="btn" id="but">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
